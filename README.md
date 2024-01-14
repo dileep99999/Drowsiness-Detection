@@ -14,7 +14,6 @@ The proposed model is Inception v3 have proved to be more computationally effici
 This model converts the eye images from RGB to grey scale images and predicts the output by using the final softmax layers. 
 The model detects whether the eyes are closed or open for certain amount of time. If the eyes are closed for more than 12 successive frames the alarm rings it stops when both the eyes are completely open.
 # Flow Chart
-Flow Chart :
 From incoming live video stream, image is extracted. Then the face is detected using Haarcascade face classifier from the image.
 If the detection of face is successful, then both the eyes are detected using Haarcascade left eye and right eye classifiers. If face is not detected, the next frame need to be considered from video stream.
 After identification of eyes, the eyes are cropped from the face and the RGB images are converted into grey scale images and this will be fed into the proposed Transfer Learning model.
